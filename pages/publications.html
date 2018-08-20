@@ -1,7 +1,7 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
- <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
 
@@ -13,24 +13,57 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-</head>
-<body>
-	 <div class="intro-header">    
-      <div class="container">
-        <div class="post-heading">
-            <h1>{{page.title}}</h1>
-            <span class="meta">Posted by <a href="{{ site.baseurl }}/about"> {{page.author}}
-            </a> on {{ page.date | date: "%B %e, %Y" }}
-            <a href="{{ site.baseurl }}/"> { Return to Blog }</a>
-            </span>
-        </div>
-            
-      </div>
-    </div>
+    <style>
+      .intro-header{
+        background-color: #000000
+      }
+    </style>
+  </head>
+
+  <body>
     
+    <div class="intro-header">
+        <div class="wrapper-masthead">
+         <div class="container">
+           <header class="masthead clearfix">
+             <div class="site-info">
+               <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+               <p class="site-description">{{ site.description }}</p>
+             </div>
+             <nav>
+               <a href="{{ site.baseurl }}/pages/publications.html">Publications</a>
+             </nav>
+           </header>
+         </div>
+       </div>
+       
+        <div class="container">
+            <div class="space-small"></div>
+           
+            <div class="centered">
+              <ul class="ch-grid">
+                <li>
+                    <div class="ch-item ch-img-1">				
+                        <div class="ch-info-wrap">
+                            <div class="ch-info">
+                                <div class="ch-info-front ch-img-1"></div>
+                                <div class="ch-info-back">
+                                    <h3>{{site.name}}</h3>
+                                    <p></br><a href="https://linkedin.com/in/{{ site.footer-links.linkedin }}">View on LinkedIn</a></p>
+                                </div>	
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+             
+             <div class="space-medium"></div>
+            
+        </div>
+    </div>
 
     <div id="main" role="main" class="container">
-      <article>
 	<p>Kamran Janjua, M. and Nawaz, S. and Calefati, A. and Gallo, I. <br><strong>"Revisiting Cross Modal Retrieval".</strong> <br>Under Review at European Conference on Computer Vision Workshop, 2018 (ECCVW).</p>
 	<button onclick="location.href='https://arxiv.org/pdf/1807.07364v1.pdf'" type="button" class="btn btn-primary btn-xs">Paper</button>
 	<button type="button" class="btn btn-success btn-xs">Code</button>
@@ -41,9 +74,7 @@
 	
 	<p>Gallo, I. and Nawaz, S. and Calefati, A. and Kamran Janjua, M.<br><strong>"Image and Text Fusion for Multi-modal Classification".</strong> <br>Under Review at European Conference on Computer Vision Workshop, 2018 (ECCVW).</p>
 	<button type="button" class="btn btn-primary btn-xs">Paper</button>
-	<button type="button" class="btn btn-success btn-xs">Code</button>
-	</article>
-    </div>
+	<button type="button" class="btn btn-success btn-xs">Code</button>    </div>
 
     <div class="wrapper-footer">
       <div class="container">
@@ -55,7 +86,7 @@
       </div>
     </div>
 
-
-    {% include analytics.html %}  
-</body>
+    {% include analytics.html %}
+  </body>
 </html>
+
