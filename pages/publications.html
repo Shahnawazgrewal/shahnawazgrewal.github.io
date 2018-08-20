@@ -15,8 +15,22 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
- <div>	
-	<article>
+	 <div class="intro-header">    
+      <div class="container">
+        <div class="post-heading">
+            <h1>{{page.title}}</h1>
+            <span class="meta">Posted by <a href="{{ site.baseurl }}/about"> {{page.author}}
+            </a> on {{ page.date | date: "%B %e, %Y" }}
+            <a href="{{ site.baseurl }}/"> { Return to Blog }</a>
+            </span>
+        </div>
+            
+      </div>
+    </div>
+    
+
+    <div id="main" role="main" class="container">
+      <article>
 	<p>Kamran Janjua, M. and Nawaz, S. and Calefati, A. and Gallo, I. <br><strong>"Revisiting Cross Modal Retrieval".</strong> <br>Under Review at European Conference on Computer Vision Workshop, 2018 (ECCVW).</p>
 	<button onclick="location.href='https://arxiv.org/pdf/1807.07364v1.pdf'" type="button" class="btn btn-primary btn-xs">Paper</button>
 	<button type="button" class="btn btn-success btn-xs">Code</button>
@@ -29,6 +43,19 @@
 	<button type="button" class="btn btn-primary btn-xs">Paper</button>
 	<button type="button" class="btn btn-success btn-xs">Code</button>
 	</article>
-</div>    
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+            <div class="svg-icon">
+          {% include svg-icons.html %}
+            </div>
+        </footer>
+      </div>
+    </div>
+
+
+    {% include analytics.html %}  
 </body>
 </html>
