@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research &mdash; Shah Nawaz</title>
+<meta name="description" content="Research themes of Shah Nawaz: multimodal representation learning, robustness under missing modalities, trustworthy AI, efficient learning.">
+<meta name="author" content="Shah Nawaz">
+<meta property="og:title" content="Research &mdash; Shah Nawaz">
+<meta property="og:description" content="Research themes of Shah Nawaz: multimodal representation learning, robustness under missing modalities, trustworthy AI, efficient learning.">
+<meta property="og:type" content="profile">
+<meta property="og:image" content="https://shahnawazgrewal.github.io/images/ShahNawaz.jpg">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+<link rel="manifest" href="images/favicon/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/site.js"></script>
+
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">Shah Nawaz</a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="publications.html">Publications</a>
+      <a href="research.html">Research</a>
+      <a href="challenges.html">Challenges</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="service.html">Service</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
+  </div>
+</header>
+<main class="wrap">
+<section>
+  <h2>Research</h2>
+  <p class="lead">Multimodal systems are usually evaluated in conditions they will never meet: every modality
+    present, every input clean, every speaker in the same language. My work asks what these systems actually learn,
+    and what happens to them when those assumptions break.</p>
+</section>
+
+<section>
+  <h2>Multimodal &amp; cross-modal representation learning</h2>
+  <p>Conventional multimodal architectures dedicate a separate network to each modality. We have shown repeatedly
+    that a <strong>single branch</strong> can carry several modalities at once &mdash; for multimodal training
+    (<em>ICASSP 2023</em>), for recommendation under cold-start and missing modalities (<em>ACM RecSys 2024</em>,
+    <em>ACM TORS 2025</em>), and as a parameter-efficient collaborative branch (<em>ACM RecSys 2025</em>). The
+    recurring finding is that the modality gap is an architectural artefact more than an inherent property of
+    the data.</p>
+  <p>On the geometry side, <em>Face-Voice Association with Inductive Bias for Maximum Class Separation</em>
+    (<em>ICASSP 2026</em>) replaces learned class prototypes with a fixed simplex, which both removes parameters
+    and improves separation in the joint space.</p>
+</section>
+
+<section>
+  <h2>Robustness under missing, noisy and corrupted inputs</h2>
+  <p>A model that needs all of its inputs is not deployable. <em>Robust Harmful Meme Detection under Missing
+    Modalities via Shared Representation Learning</em> (<em>ACM Web Conference 2026</em>) formulates a shared
+    representation that degrades gracefully when a modality is absent at inference rather than collapsing.
+    <em>SB-BEVFusion</em> (<em>IEEE ICIP 2026</em>) carries the same idea into autonomous-driving perception,
+    under sensor malfunction and corruption.</p>
+</section>
+
+<section>
+  <h2>Vision&ndash;language and foundation-model evaluation</h2>
+  <p>Large vision&ndash;language models are typically benchmarked on English, Western-centric data. <em>From
+    Native Memes to Global Moderation</em> (<em>ACM Web Conference 2026</em>) evaluates them cross-culturally on
+    hateful-meme detection, where the gap between reported and real-world performance is largest. The
+    <a href="challenges.html">FAME and FLAG challenge series</a> extends this to multilingual face&ndash;voice
+    association, and the 2027 edition adds gender-controlled evaluation to test whether models learn
+    identity-specific structure or demographic shortcuts.</p>
+</section>
+
+<section>
+  <h2>Efficient learning</h2>
+  <p>Distillation-based layer dropping (<em>ICASSP 2026</em>) and light-weight ASR training frameworks
+    (<em>Interspeech 2025</em>) target dynamic speech networks that must trade accuracy against compute at
+    inference, not at design time.</p>
+</section>
+
+<section>
+  <h2>Machine learning for science</h2>
+  <p>At DESY I led interpretable-ML methodology for X-ray detector data: <em>Explainable Machine Learning for
+    Diffraction Patterns</em> (<em>J. Appl. Cryst. 2023</em>) and the data-reduction line that followed
+    (<em>J. Appl. Cryst. 2023, 2024</em>), now used for reduction on large-scale serial-crystallography
+    experiments.</p>
+</section>
+</main>
+<footer class="site-foot wrap">
+  <span>&copy; 2026 Shah Nawaz &middot; Johannes Kepler University Linz</span>
+  <span>Built as a static site on GitHub Pages &middot; <a href="https://github.com/Shahnawazgrewal/shahnawazgrewal.github.io">source</a></span>
+</footer>
+</body>
+</html>
